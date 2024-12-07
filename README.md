@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Carambar Jokes Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Il s'agit de la partie frontend du projet **Carambar Jokes API**, une application web basée sur React conçue pour afficher des blagues de manière interactive et conviviale.
 
-## Available Scripts
+## Fonctionnalités
 
-In the project directory, you can run:
+- Récupération des blagues depuis l'API **Carambar Jokes**.
+- Interface utilisateur interactive construite avec React.
+- Design responsive adapté aux ordinateurs et appareils mobiles.
 
-### `npm start`
+## Structure du Projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```plaintext
+├── public/        # Fichiers statiques comme index.html, favicon.ico
+├── src/
+│   ├── components/ # Composants React réutilisables et Appels aux services API (ex : requêtes axios)
+│   ├── App.js      # Composant principal React
+│   ├── index.js    # Point d'entrée de l'application
+├── build/         # Fichiers prêts pour la production (créés après la compilation)
+├── package.json   # Dépendances et scripts du projet
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prérequis
 
-### `npm test`
+Assurez-vous d'avoir les éléments suivants installés sur votre système :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (v16 ou supérieur)
+- **npm** (Node Package Manager)
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clonez le dépôt :
+    [GithubLink](https://github.com/wishwani/carambar-jokes-frontend.git)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Accédez au dossier du frontend :
 
-### `npm run eject`
+    ```
+    cd <carambar-jokes-frontend>
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Installez les dépendances :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Scripts Disponibles
+1. Lancer le projet en local
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```
+    npm start
+    ```
 
-## Learn More
+    L'application sera disponible sur 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```
+    http://localhost:3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```
 
-### Code Splitting
+2. Compiler le projet pour la production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```
+    npm run build
+    ```
 
-### Analyzing the Bundle Size
+    Cela génère une version optimisée pour la production dans le dossier build/.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Déployer sur GitHub Pages
 
-### Making a Progressive Web App
+    Pour déployer la partie frontend sur GitHub Pages :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```
+    npm run deploy
 
-### Advanced Configuration
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Déploiement
+Le projet est hébergé sur GitHub Pages. Vous pouvez accéder à la version en ligne ici :
 
-### Deployment
+   [URLDeploiment](https://wishwani.github.io/carambar-jokes-frontend/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Technologies Utilisées
+React - Librairie JavaScript pour construire des interfaces utilisateur.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Axios - Pour effectuer des requêtes API.
+
+React-Scripts - Outils de compilation et de configuration pour les applications React.
