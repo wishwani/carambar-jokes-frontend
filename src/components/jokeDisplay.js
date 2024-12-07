@@ -13,7 +13,7 @@ const JokeDisplay = () => {
       const response = await axios.get('https://carambar-jokes-api-cf5j.onrender.com/jokes/random');
       setJoke(response.data.text);
     } catch (err) {
-      setError('Failed to fetch a joke. Please try again later.');
+      setError('Impossible de récupérer une blague. Veuillez réessayer plus tard.');
     } finally {
       setLoading(false);
     }
@@ -23,9 +23,9 @@ const JokeDisplay = () => {
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Carambar & Co Jokes</h1>
       <button onClick={fetchRandomJoke} style={{ margin: '20px', padding: '10px 20px' }}>
-        Get a Random Joke
+      Obtenez une blague au hasard
       </button>
-      {loading && <p>Loading...</p>}
+      {loading && <p>Chargement...</p>}
       {joke && <p style={{ fontSize: '20px', fontStyle: 'italic' }}>{joke}</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
     </div>
